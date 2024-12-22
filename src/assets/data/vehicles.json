@@ -1,0 +1,7 @@
+[
+    {"id" :1, "name": "Car"},
+    {"id" :2, "name": "Truck"},
+    {"id" :3, "name": "Train"},
+    {"id" :4, "name": "Jeep"},
+    {"id" :5, "name": "Tanks"}
+]

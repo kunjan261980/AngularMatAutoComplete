@@ -1,0 +1,25 @@
+<h3>Mat Auto Complete NGMODEL</h3>
+<mat-form-field apperance="outline">
+    <input matInput [(ngModel)]="selectedFruit" placeholder="Select a Fruit" (input)="onInputChange($event)"
+        [matAutocomplete]="auto1" />
+    <mat-autocomplete #auto1="matAutocomplete">
+        <mat-option *ngFor="let fruit of filteredFruits" [value]="fruit.name">
+            {{fruit.name}}
+        </mat-option>
+    </mat-autocomplete>
+</mat-form-field>
+
+
+
+<h3>Mat Auto Complete Reactive</h3>
+<form [formGroup]="form">
+<mat-form-field apperance="outline">
+    <input matInput fromControlName="vehicle" placeholder="Select a Vehicle" (input)="onInputReactiveChange($event)"
+        [matAutocomplete]="auto2" />
+    <mat-autocomplete #auto2="matAutocomplete">
+        <mat-option *ngFor="let vehicle of filteredVehicles" [value]="vehicle.name">
+            {{vehicle.name}}
+        </mat-option>
+    </mat-autocomplete>
+</mat-form-field>
+</form>
