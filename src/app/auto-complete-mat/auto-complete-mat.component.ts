@@ -10,13 +10,13 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class AutoCompleteMatComponent implements OnInit {
 
-  fruitStream = new Subject<string>;
+  fruitStream = new Subject<string>();
   selectedFruit: string = ''
   filteredFruits:any[] = []
   fruits: any[] = []
 
   form:FormGroup = new FormGroup({})
-  vehicleStream =  new Subject<string>;
+  vehicleStream =  new Subject<string>();
   selectedVehicle: string = ''
   filteredVehicles: any[] =[]
   vehicles: any[] = []
